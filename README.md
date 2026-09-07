@@ -58,7 +58,7 @@ Primeiro projeto desenvolvido utilizando o **Flowgorithm**, com o objetivo de ap
 
 A calculadora permite realizar diferentes operações matemáticas a partir dos valores informados pelo usuário.
 
-📁 **Pasta do projeto:** [`calculadora-flowgorithm`](./calculadora-flowgorithm)
+📁 **Pasta do projeto:** [`calculadora-flowgorithm`](./calculadora_em_flowgorithm)
 
 ### Principais conceitos praticados
 
