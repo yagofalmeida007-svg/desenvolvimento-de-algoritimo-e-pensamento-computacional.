@@ -1,106 +1,67 @@
 # Desenvolvimento de Algoritmos e Pensamento Computacional
 
-Este repositório reúne os **projetos, exercícios e atividades acadêmicas** desenvolvidos ao longo das aulas de **Desenvolvimento de Algoritmos e Pensamento Computacional**.
+Este repositório reúne os **projetos, exercícios e atividades acadêmicas** desenvolvidos ao longo da disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**.
 
-O objetivo é registrar minha evolução acadêmica e prática na área de programação, apresentando os projetos desenvolvidos e os conhecimentos adquiridos durante a disciplina.
+O objetivo é registrar minha evolução na área de programação, reunindo projetos que representam a aplicação prática dos conceitos estudados em sala de aula.
 
----
+## 📚 Projetos
 
-## 📂 Estrutura do Repositório
+### 🧮 Calculadora em Flowgorithm
 
-A organização do repositório foi definida de forma a separar cada projeto e sua respectiva documentação.
+Primeiro projeto desenvolvido na disciplina, utilizando o **Flowgorithm** para representar a lógica de programação por meio de fluxogramas.
 
-```text
-Desenvolvimento_de_Algoritmos_e_Pensamento_Computacional/
-│
-├── 📁 Calculadora_em_C/
-│   ├── calculadora.c
-│   └── README.md
-│
-├── 📁 calculadora-flowgorithm/
-│   ├── calculadora.fprg
-│   └── README.md
-│
-└── 📄 README.md
-```
-
-Cada projeto possui uma pasta própria, contendo seus arquivos e um `README.md` com informações específicas sobre seu desenvolvimento, funcionamento e execução.
-
----
-
-## 🧮 Calculadora em C
-
-Projeto acadêmico desenvolvido em **linguagem C** a partir da lógica de uma calculadora anteriormente criada no Flowgorithm.
-
-A aplicação possui **20 operações matemáticas**, utiliza a biblioteca `math.h` e conta com uma estrutura de repetição `while`, permitindo que o usuário realize diversas operações durante a mesma execução.
-
-O programa permanece em funcionamento até que o usuário selecione a opção `0`, responsável por encerrar a aplicação.
-
-📁 **Pasta do projeto:** [`Calculadora_em_C`](./Calculadora_em_C)
-
-### Principais conceitos praticados
+O projeto aborda conceitos fundamentais como:
 
 * Variáveis;
 * Entrada e saída de dados;
 * Operadores matemáticos;
 * Estruturas condicionais;
-* Estrutura de repetição `while`;
+* Lógica de programação;
+* Desenvolvimento de algoritmos por meio de fluxogramas.
+
+📁 [Acessar projeto](./calculadora_em_flowgorithm)
+
+---
+
+### 💻 Calculadora em C
+
+Evolução da calculadora anteriormente desenvolvida no Flowgorithm, agora implementada utilizando a **linguagem C**.
+
+O projeto possui **20 operações matemáticas**, utiliza a biblioteca `math.h` e conta com uma estrutura de repetição `while`, permitindo realizar diversas operações durante a mesma execução.
+
+O programa permanece em funcionamento até que o usuário selecione a opção `0`.
+
+Entre os principais conceitos praticados estão:
+
+* Linguagem C;
+* Estruturas de repetição;
+* Estruturas condicionais;
+* Variáveis;
+* Operadores;
 * Bibliotecas;
 * Funções matemáticas;
 * Menus interativos;
-* Compilação e execução de programas em C.
+* Compilação e execução de programas.
+
+📁 [Acessar projeto](./calculadora_em_c)
 
 ---
 
-## 🔷 Calculadora em Flowgorithm
+## 🛠️ Tecnologias e ferramentas
 
-Primeiro projeto desenvolvido utilizando o **Flowgorithm**, com o objetivo de aplicar conceitos fundamentais de lógica de programação por meio de fluxogramas.
+As atividades deste repositório utilizam diferentes ferramentas e tecnologias estudadas durante a disciplina:
 
-A calculadora permite realizar diferentes operações matemáticas a partir dos valores informados pelo usuário.
+* **C**
+* **Flowgorithm**
+* **Visual Studio Code**
+* **GCC**
+* **Python** *(conforme novos projetos forem adicionados)*
 
-📁 **Pasta do projeto:** [`calculadora-flowgorithm`](./calculadora_em_flowgorithm)
+## 🎯 Objetivo do repositório
 
-### Principais conceitos praticados
+Este repositório funciona como um **portfólio acadêmico**, permitindo acompanhar minha evolução no desenvolvimento de algoritmos e na aprendizagem de diferentes conceitos de programação.
 
-* Entrada e saída de dados;
-* Variáveis;
-* Operadores matemáticos;
-* Estruturas condicionais;
-* Lógica de programação;
-* Desenvolvimento de algoritmos;
-* Representação de algoritmos por meio de fluxogramas.
-
----
-
-## 🛠️ Tecnologias e Ferramentas
-
-| Tecnologia/Ferramenta  | Utilização                                          |
-| ---------------------- | --------------------------------------------------- |
-| **C**                  | Desenvolvimento da calculadora                      |
-| **Flowgorithm**        | Desenvolvimento do algoritmo por meio de fluxograma |
-| **Visual Studio Code** | Ambiente de desenvolvimento                         |
-| **GCC**                | Compilação dos programas em C                       |
-| **math.h**             | Funções e operações matemáticas                     |
-
----
-
-## 🎯 Objetivo do Repositório
-
-Este repositório funciona como um **registro da minha evolução acadêmica e prática em programação**, reunindo projetos desenvolvidos durante a disciplina.
-
-Por meio das atividades, busco desenvolver e aprimorar conhecimentos relacionados a:
-
-* Lógica de programação;
-* Pensamento computacional;
-* Desenvolvimento de algoritmos;
-* Linguagens de programação;
-* Resolução de problemas;
-* Estruturas de controle;
-* Boas práticas de desenvolvimento.
-
-Novos projetos e atividades serão adicionados ao repositório conforme o avanço da disciplina e da minha formação acadêmica.
-
----
+Novos projetos, exercícios e atividades serão adicionados ao longo da minha formação acadêmica.
 
 ## 👨‍💻 Autor
 
@@ -108,4 +69,4 @@ Novos projetos e atividades serão adicionados ao repositório conforme o avanç
 
 Estudante de Ciência da Computação.
 
-> Repositório desenvolvido para fins acadêmicos e de aprendizado em programação.
+Este repositório possui finalidade acadêmica e educacional, sendo utilizado para registrar projetos e conhecimentos desenvolvidos durante minha formação.
