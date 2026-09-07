@@ -46,6 +46,19 @@ Entre os principais conceitos praticados estão:
 📁 [Acessar projeto](./calculadora_em_c)
 
 ---
+## Estrutura do repositorio
+
+Desenvolvimento_de_Algoritmos_e_Pensamento_Computacional/
+│
+├── 📁 Calculadora_em_C/
+│   ├── calculadora.c
+│   └── README.md
+│
+├── 📁 calculadora-flowgorithm/
+│   ├── calculadora.fprg
+│   └── README.md
+│
+└── 📄 README.md
 
 ## 🛠️ Tecnologias e ferramentas
 
