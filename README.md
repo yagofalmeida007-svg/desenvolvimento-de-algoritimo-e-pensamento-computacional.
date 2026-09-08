@@ -58,6 +58,7 @@ Desenvolvimento_de_Algoritmos_e_Pensamento_Computacional/
 ├── 📁 calculadora-flowgorithm/
 │   ├── calculadora_em_flowgorithm.fprg
 │   └── README.md
+|
 ├── 📁 Conversor_de_Temperaturas_em_C/
 │   ├── conversor_temperaturas.c
 │   └── README.md
