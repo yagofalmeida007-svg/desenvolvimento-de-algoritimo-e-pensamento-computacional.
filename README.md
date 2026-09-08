@@ -45,6 +45,25 @@ Entre os principais conceitos praticados estão:
 
 📁 [Acessar projeto](./calculadora_em_c)
 
+## 🌡️ Conversor de Temperaturas em C
+
+Este projeto consiste no desenvolvimento de um **conversor de temperaturas utilizando a linguagem C**.
+
+A aplicação permite realizar conversões entre diferentes escalas de temperatura por meio de um menu interativo. Para organizar as opções disponíveis, foi utilizada a estrutura de seleção **`switch case`**, colocando em prática conceitos de lógica de programação e estruturas condicionais.
+
+### 📌 Conceitos praticados
+
+* Variáveis;
+* Entrada e saída de dados;
+* Operadores matemáticos;
+* Estrutura de seleção `switch case`;
+* Menu interativo;
+* Conversão de unidades;
+* Lógica de programação;
+* Linguagem C.
+
+📁 **Pasta do projeto:** [`Conversor_de_Temperaturas_em_C`](./Conversor_de_Temperaturas_em_C)
+
 ---
 ## 📂 Estrutura do Repositório
 
