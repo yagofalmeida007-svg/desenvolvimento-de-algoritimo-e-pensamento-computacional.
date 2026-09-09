@@ -6,7 +6,7 @@ Este projeto consiste no desenvolvimento de um **Conversor de Temperaturas utili
 
 A aplicação permite ao usuário realizar conversões entre as escalas **Celsius, Fahrenheit e Kelvin**, por meio de um menu interativo no terminal.
 
-O projeto foi desenvolvido com foco na prática de conceitos fundamentais de programação em C, como **funções, estruturas de seleção, estruturas de repetição, ponteiros, variáveis, operadores matemáticos e entrada e saída de dados**.
+O projeto foi desenvolvido com foco na prática de conceitos fundamentais de programação em C, como **funções, estruturas de seleção, estruturas de repetição, variáveis, operadores matemáticos e entrada e saída de dados**.
 
 Para organizar as diferentes opções de conversão, foi utilizada a estrutura de seleção **`switch case`**, enquanto o menu é mantido em execução por meio de um **loop `do while`**.
 
@@ -16,7 +16,7 @@ Para organizar as diferentes opções de conversão, foi utilizada a estrutura d
 
 O projeto foi desenvolvido como parte das atividades da disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**, com o objetivo de praticar a linguagem C e desenvolver o raciocínio lógico por meio da resolução de um problema prático.
 
-Além disso, o projeto busca aplicar conceitos de **modularização**, separando cada tipo de conversão em uma função específica.
+Além disso, o projeto utiliza funções para organizar as diferentes operações de conversão, tornando o código mais estruturado e fácil de compreender.
 
 ---
 
@@ -24,16 +24,16 @@ Além disso, o projeto busca aplicar conceitos de **modularização**, separando
 
 O programa apresenta um menu interativo no qual o usuário pode escolher a conversão de temperatura desejada.
 
-### Conversões disponíveis:
+### 🌡️ Conversões disponíveis
 
-* 🌡️ Celsius → Fahrenheit
-* 🌡️ Celsius → Kelvin
-* 🌡️ Fahrenheit → Celsius
-* 🌡️ Fahrenheit → Kelvin
-* 🌡️ Kelvin → Celsius
-* 🌡️ Kelvin → Fahrenheit
+* Celsius → Fahrenheit
+* Celsius → Kelvin
+* Fahrenheit → Celsius
+* Fahrenheit → Kelvin
+* Kelvin → Celsius
+* Kelvin → Fahrenheit
 
-### Outras funcionalidades:
+### Outras funcionalidades
 
 * Menu interativo no terminal;
 * Utilização da estrutura `switch case`;
@@ -44,8 +44,7 @@ O programa apresenta um menu interativo no qual o usuário pode escolher a conve
 * Validação das opções escolhidas pelo usuário;
 * Mensagem de erro para opções inválidas;
 * Opção para encerrar o programa digitando `0`;
-* Implementação das conversões por meio de funções;
-* Utilização de ponteiros nas funções de conversão.
+* Utilização de funções para realizar as conversões.
 
 ---
 
@@ -107,7 +106,7 @@ Cada número corresponde a uma conversão diferente:
 0 → Sair
 ```
 
-Dessa forma, o programa consegue identificar a opção escolhida e executar a função correspondente.
+De acordo com a opção escolhida, o programa executa a função responsável pela conversão correspondente.
 
 ---
 
@@ -115,7 +114,7 @@ Dessa forma, o programa consegue identificar a opção escolhida e executar a fu
 
 O programa utiliza um **loop `do while`** para manter o menu funcionando até que o usuário escolha a opção `0`.
 
-A estrutura garante que o menu seja apresentado pelo menos uma vez e continue sendo executado enquanto a opção escolhida for diferente de `0`.
+Dessa forma, o menu é exibido novamente após cada conversão, permitindo que o usuário realize várias operações sem precisar reiniciar o programa.
 
 ```c
 do {
@@ -123,13 +122,15 @@ do {
 } while (opcao != 0);
 ```
 
+O programa somente é encerrado quando o usuário seleciona a opção `0`.
+
 ---
 
 ## 🧩 Funções
 
-Cada conversão foi implementada em uma função específica, tornando o código mais organizado e facilitando sua manutenção.
+Cada tipo de conversão foi organizado em uma função específica.
 
-Entre as funções utilizadas estão:
+As funções utilizadas no projeto são:
 
 ```c
 celsius_para_fahrenheit()
@@ -142,27 +143,15 @@ kelvin_para_fahrenheit()
 
 Essa organização permite separar a lógica de cada conversão do restante do programa.
 
----
-
-## 📍 Utilização de ponteiros
-
-O projeto também utiliza **ponteiros nas funções de conversão**.
-
-As funções recebem o endereço da variável de temperatura e utilizam o operador `*` para acessar o valor armazenado.
-
-Exemplo:
+Por exemplo:
 
 ```c
-float celsius_para_fahrenheit(float *c)
+float celsius_para_fahrenheit(float c) {
+    return (c * 9.0 / 5.0) + 32.0;
+}
 ```
 
-E dentro da função:
-
-```c
-return (*c * 9.0 / 5.0) + 32.0;
-```
-
-Esse recurso foi utilizado como parte da prática dos conceitos fundamentais da linguagem C.
+A função recebe uma temperatura em Celsius e retorna o valor correspondente em Fahrenheit.
 
 ---
 
@@ -189,15 +178,14 @@ Durante o desenvolvimento do projeto, foram praticados os seguintes conceitos:
 * `scanf`;
 * Operadores aritméticos;
 * Estruturas condicionais;
-* `if` e `else if`;
+* `if`;
+* `else if`;
 * Estrutura `switch case`;
 * `case`;
 * `break`;
 * Estrutura de repetição `do while`;
 * Funções;
 * Parâmetros de funções;
-* Ponteiros;
-* Operador de desreferenciação `*`;
 * Fórmulas matemáticas;
 * Menu interativo;
 * Validação de opções;
@@ -292,15 +280,15 @@ Conversor_de_Temperaturas_em_C/
 
 Este projeto faz parte do processo de aprendizagem da **linguagem C** e tem como objetivo colocar em prática conceitos estudados na disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**.
 
-O desenvolvimento do conversor contribuiu para a compreensão de **funções, ponteiros, estruturas de seleção, estruturas de repetição, operações matemáticas, validação de entradas e construção de menus interativos**.
+O desenvolvimento do conversor contribuiu para a compreensão de **funções, estruturas de seleção, estruturas de repetição, operações matemáticas, validação de opções e construção de menus interativos**.
 
-O projeto também representa uma evolução no aprendizado da linguagem C, aplicando diferentes conceitos em uma única aplicação funcional.
+O projeto também representa uma aplicação prática dos conceitos de lógica de programação estudados durante a disciplina.
 
 ---
 
 ## 🚀 Possíveis melhorias
 
-Apesar de o projeto já possuir as principais conversões entre Celsius, Fahrenheit e Kelvin, algumas melhorias podem ser implementadas futuramente:
+Algumas melhorias podem ser implementadas futuramente:
 
 * Adicionar outras escalas de temperatura, como Rankine;
 * Implementar uma validação mais completa dos valores inseridos;
