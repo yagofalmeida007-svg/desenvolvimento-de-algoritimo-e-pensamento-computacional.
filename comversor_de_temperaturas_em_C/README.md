@@ -1,46 +1,62 @@
 # 🌡️ Conversor de Temperaturas em C
 
-## Sobre o projeto
+## 📌 Sobre o projeto
 
-Este projeto consiste no desenvolvimento de um **conversor de temperaturas utilizando a linguagem C**.
+Este projeto consiste no desenvolvimento de um **Conversor de Temperaturas utilizando a linguagem C**.
 
-A aplicação permite ao usuário realizar conversões entre diferentes escalas de temperatura por meio de um **menu interativo**.
+A aplicação permite ao usuário realizar conversões entre as escalas **Celsius, Fahrenheit e Kelvin**, por meio de um menu interativo no terminal.
 
-O projeto foi desenvolvido com foco na prática de conceitos fundamentais de **lógica de programação, estruturas condicionais, variáveis, operadores matemáticos e entrada e saída de dados**.
+O projeto foi desenvolvido com foco na prática de conceitos fundamentais de programação em C, como **funções, estruturas de seleção, estruturas de repetição, ponteiros, variáveis, operadores matemáticos e entrada e saída de dados**.
 
-Para organizar as diferentes opções de conversão, foi utilizada a estrutura de seleção **`switch case`**.
+Para organizar as diferentes opções de conversão, foi utilizada a estrutura de seleção **`switch case`**, enquanto o menu é mantido em execução por meio de um **loop `do while`**.
+
+---
 
 ## 🎯 Objetivo
 
-O projeto foi desenvolvido como parte das atividades da disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**, com o objetivo de praticar a utilização da linguagem C e desenvolver o raciocínio lógico por meio da resolução de um problema prático.
+O projeto foi desenvolvido como parte das atividades da disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**, com o objetivo de praticar a linguagem C e desenvolver o raciocínio lógico por meio da resolução de um problema prático.
+
+Além disso, o projeto busca aplicar conceitos de **modularização**, separando cada tipo de conversão em uma função específica.
+
+---
 
 ## ⚙️ Funcionalidades
 
-O programa apresenta um menu no qual o usuário pode escolher a conversão de temperatura desejada.
+O programa apresenta um menu interativo no qual o usuário pode escolher a conversão de temperatura desejada.
 
-Entre as principais funcionalidades estão:
+### Conversões disponíveis:
 
-* Conversão entre diferentes escalas de temperatura;
-* Menu interativo;
+* 🌡️ Celsius → Fahrenheit
+* 🌡️ Celsius → Kelvin
+* 🌡️ Fahrenheit → Celsius
+* 🌡️ Fahrenheit → Kelvin
+* 🌡️ Kelvin → Celsius
+* 🌡️ Kelvin → Fahrenheit
+
+### Outras funcionalidades:
+
+* Menu interativo no terminal;
 * Utilização da estrutura `switch case`;
+* Utilização de loop de repetição `do while`;
 * Entrada de valores pelo usuário;
 * Cálculo automático da temperatura convertida;
-* Exibição do resultado no terminal.
+* Exibição do resultado no terminal;
+* Validação das opções escolhidas pelo usuário;
+* Mensagem de erro para opções inválidas;
+* Opção para encerrar o programa digitando `0`;
+* Implementação das conversões por meio de funções;
+* Utilização de ponteiros nas funções de conversão.
+
+---
 
 ## 🌡️ Conversões
 
-O conversor utiliza fórmulas matemáticas para realizar as conversões entre escalas de temperatura.
+O programa utiliza fórmulas matemáticas para realizar as conversões entre as três escalas de temperatura.
 
 ### Celsius para Fahrenheit
 
 ```text
 °F = (°C × 9/5) + 32
-```
-
-### Fahrenheit para Celsius
-
-```text
-°C = (°F - 32) × 5/9
 ```
 
 ### Celsius para Kelvin
@@ -49,21 +65,106 @@ O conversor utiliza fórmulas matemáticas para realizar as conversões entre es
 K = °C + 273.15
 ```
 
+### Fahrenheit para Celsius
+
+```text
+°C = (°F - 32) × 5/9
+```
+
+### Fahrenheit para Kelvin
+
+```text
+K = ((°F - 32) × 5/9) + 273.15
+```
+
 ### Kelvin para Celsius
 
 ```text
 °C = K - 273.15
 ```
 
-> As conversões disponíveis podem variar de acordo com as opções implementadas no código.
+### Kelvin para Fahrenheit
+
+```text
+°F = ((K - 273.15) × 9/5) + 32
+```
+
+---
 
 ## 🧠 Estrutura `switch case`
 
-A estrutura **`switch case`** foi utilizada para controlar as opções escolhidas pelo usuário no menu.
+A estrutura **`switch case`** foi utilizada para controlar as opções selecionadas pelo usuário no menu.
 
-De acordo com a opção selecionada, o programa executa o bloco de código correspondente à conversão desejada.
+Cada número corresponde a uma conversão diferente:
 
-Essa estrutura permite organizar o código de maneira mais clara quando existem várias opções diferentes para o usuário escolher.
+```text
+1 → Celsius para Fahrenheit
+2 → Celsius para Kelvin
+3 → Fahrenheit para Celsius
+4 → Fahrenheit para Kelvin
+5 → Kelvin para Celsius
+6 → Kelvin para Fahrenheit
+0 → Sair
+```
+
+Dessa forma, o programa consegue identificar a opção escolhida e executar a função correspondente.
+
+---
+
+## 🔄 Estrutura `do while`
+
+O programa utiliza um **loop `do while`** para manter o menu funcionando até que o usuário escolha a opção `0`.
+
+A estrutura garante que o menu seja apresentado pelo menos uma vez e continue sendo executado enquanto a opção escolhida for diferente de `0`.
+
+```c
+do {
+    // Menu e operações
+} while (opcao != 0);
+```
+
+---
+
+## 🧩 Funções
+
+Cada conversão foi implementada em uma função específica, tornando o código mais organizado e facilitando sua manutenção.
+
+Entre as funções utilizadas estão:
+
+```c
+celsius_para_fahrenheit()
+celsius_para_kelvin()
+fahrenheit_para_celsius()
+fahrenheit_para_kelvin()
+kelvin_para_celsius()
+kelvin_para_fahrenheit()
+```
+
+Essa organização permite separar a lógica de cada conversão do restante do programa.
+
+---
+
+## 📍 Utilização de ponteiros
+
+O projeto também utiliza **ponteiros nas funções de conversão**.
+
+As funções recebem o endereço da variável de temperatura e utilizam o operador `*` para acessar o valor armazenado.
+
+Exemplo:
+
+```c
+float celsius_para_fahrenheit(float *c)
+```
+
+E dentro da função:
+
+```c
+return (*c * 9.0 / 5.0) + 32.0;
+```
+
+Esse recurso foi utilizado como parte da prática dos conceitos fundamentais da linguagem C.
+
+---
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -74,22 +175,36 @@ Essa estrutura permite organizar o código de maneira mais clara quando existem 
 | **GCC**                | Compilação do código                |
 | **Terminal**           | Execução e interação com o programa |
 
-## 📌 Conceitos praticados
+---
+
+## 📚 Conceitos praticados
 
 Durante o desenvolvimento do projeto, foram praticados os seguintes conceitos:
 
 * Variáveis;
 * Tipos de dados;
+* `float`;
 * Entrada e saída de dados;
+* `printf`;
+* `scanf`;
 * Operadores aritméticos;
 * Estruturas condicionais;
-* `switch case`;
+* `if` e `else if`;
+* Estrutura `switch case`;
 * `case`;
 * `break`;
-* Menu interativo;
+* Estrutura de repetição `do while`;
+* Funções;
+* Parâmetros de funções;
+* Ponteiros;
+* Operador de desreferenciação `*`;
 * Fórmulas matemáticas;
+* Menu interativo;
+* Validação de opções;
 * Lógica de programação;
 * Compilação e execução em C.
+
+---
 
 ## ▶️ Como executar
 
@@ -101,9 +216,9 @@ Para executar o projeto, é necessário possuir:
 * **Visual Studio Code** ou outro editor de código;
 * Terminal ou Prompt de Comando.
 
-### Compilando o programa
+### 📥 Compilando o programa
 
-Abra o terminal na pasta onde está localizado o arquivo do projeto e execute:
+Abra o terminal na pasta onde está localizado o arquivo `conversor_temperaturas.c` e execute:
 
 ```bash
 gcc conversor_temperaturas.c -o conversor_temperaturas
@@ -111,37 +226,56 @@ gcc conversor_temperaturas.c -o conversor_temperaturas
 
 Após a compilação, execute o programa.
 
-No Windows:
+### 🪟 Windows
 
 ```bash
 conversor_temperaturas.exe
 ```
 
-No Linux:
+### 🐧 Linux
 
 ```bash
 ./conversor_temperaturas
 ```
 
+---
+
 ## 💻 Exemplo de execução
 
 ```text
-====================================
-     CONVERSOR DE TEMPERATURAS
-====================================
+=== CONVERSOR DE TEMPERATURAS ===
+1. Celsius para Fahrenheit
+2. Celsius para Kelvin
+3. Fahrenheit para Celsius
+4. Fahrenheit para Kelvin
+5. Kelvin para Celsius
+6. Kelvin para Fahrenheit
+0. Sair
+=================================
+Escolha uma opcao: 1
 
-1 - Celsius para Fahrenheit
-2 - Fahrenheit para Celsius
-3 - Celsius para Kelvin
-4 - Kelvin para Celsius
-0 - Sair
+Digite o valor da temperatura: 25
 
-Escolha uma opção: 1
-
-Digite a temperatura em Celsius: 25
-
-Resultado: 77.00 °F
+Resultado: 25.00 °C = 77.00 °F
 ```
+
+Caso o usuário escolha uma opção inválida:
+
+```text
+Escolha uma opcao: 9
+
+Opcao invalida! Tente novamente.
+```
+
+Para encerrar o programa:
+
+```text
+Escolha uma opcao: 0
+
+--- PROGRAMA ENCERRADO ---
+```
+
+---
 
 ## 📂 Estrutura do projeto
 
@@ -152,26 +286,35 @@ Conversor_de_Temperaturas_em_C/
 └── 📄 README.md
 ```
 
+---
+
 ## 📚 Objetivo acadêmico
 
 Este projeto faz parte do processo de aprendizagem da **linguagem C** e tem como objetivo colocar em prática conceitos estudados na disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**.
 
-O desenvolvimento do conversor contribuiu para a compreensão de estruturas de seleção, operações matemáticas e construção de menus interativos.
+O desenvolvimento do conversor contribuiu para a compreensão de **funções, ponteiros, estruturas de seleção, estruturas de repetição, operações matemáticas, validação de entradas e construção de menus interativos**.
+
+O projeto também representa uma evolução no aprendizado da linguagem C, aplicando diferentes conceitos em uma única aplicação funcional.
+
+---
 
 ## 🚀 Possíveis melhorias
 
-Futuramente, o projeto pode receber novas funcionalidades, como:
+Apesar de o projeto já possuir as principais conversões entre Celsius, Fahrenheit e Kelvin, algumas melhorias podem ser implementadas futuramente:
 
-* [ ] Adicionar conversão de Fahrenheit para Kelvin;
-* [ ] Adicionar conversão de Kelvin para Fahrenheit;
-* [ ] Adicionar outras escalas de temperatura;
-* [ ] Implementar validação das entradas;
-* [ ] Adicionar uma opção para realizar várias conversões;
-* [ ] Melhorar a interface do terminal.
+* Adicionar outras escalas de temperatura, como Rankine;
+* Implementar uma validação mais completa dos valores inseridos;
+* Impedir temperaturas inválidas, como valores abaixo do zero absoluto;
+* Adicionar uma opção para realizar várias conversões em sequência;
+* Melhorar a interface visual do terminal;
+* Adicionar histórico das conversões realizadas;
+* Separar as funções em diferentes arquivos `.c` e `.h`;
+* Criar uma versão com interface gráfica.
+
+---
 
 ## 👨‍💻 Autor
 
 **Yago Fernandes**
 
-Projeto desenvolvido para fins acadêmicos e de aprendizado em programação.
-
+Projeto desenvolvido para fins acadêmicos e de aprendizado em programação, como parte das atividades da disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**.
