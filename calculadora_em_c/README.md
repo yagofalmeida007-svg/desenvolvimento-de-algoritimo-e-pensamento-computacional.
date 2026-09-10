@@ -175,6 +175,6 @@ Algumas funcionalidades que podem ser implementadas futuramente:
 
 ## Autor
 
-**Yago Fernandes**
+**Yago Fernandes de Almeida**
 
 Projeto desenvolvido para fins acadêmicos e de aprendizado em programação.
