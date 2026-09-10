@@ -303,6 +303,6 @@ Algumas melhorias podem ser implementadas futuramente:
 
 ## 👨‍💻 Autor
 
-**Yago Fernandes**
+**Yago Fernandes de Almeida**
 
 Projeto desenvolvido para fins acadêmicos e de aprendizado em programação, como parte das atividades da disciplina de **Desenvolvimento de Algoritmos e Pensamento Computacional**.
