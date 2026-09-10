@@ -102,7 +102,7 @@ Novos projetos, exercícios e atividades serão adicionados ao longo da minha fo
 
 ## 👨‍💻 Autor
 
-**Yago Fernandes**
+**Yago Fernandes de Almeida**
 
 Estudante de Ciência da Computação.
 
